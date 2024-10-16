@@ -1,0 +1,21 @@
+#evaluasi performa dari nilai mahasiswa
+def evaluate_performance(percentage):
+    #jika nilai mahasiswa di atas 90 maka akan mendapat predikat "Excellent performance"
+    if percentage >= 90:
+        print ("Excellent performance")
+    #jika nilai mahasiswa di atas 80 maka akan mendapat predikat "Very Good performance"
+    elif percentage >= 80:
+        print ("Very Good performance")
+    #jika nilai mahasiswa di atas 70 maka akan mendapat predikat "Good performance"
+    elif percentage >= 70:
+        print ("Good performance")
+    #jika nilai mahasiswa di atas 60 maka akan mendapat predikat "Average performance"
+    elif percentage >= 60:
+        print ("Average performance")
+    #jika nilai mahasiswa di bawah 60 maka akan mendapat predikat "Below Average performance"
+    elif percentage <= 60:
+        print ("Below Average performance")
+
+#input nilai mahasiswa untuk dievaluasi
+percentage = float(input("Enter student's percentage: "))
+print(evaluate_performance(percentage))
