@@ -1,0 +1,14 @@
+# Masukkan Fungsi untuk mencetak deret Fibonacci hingga n
+def fibonacci_series(n):
+    deret = [0, 1]
+    # Menggunakan loop untuk menghasilkan deret Fibonacci hingga n 
+    for i in range(2, n):
+        angka_berikutnya = deret[i-1] + deret[i-2]
+    # Menambahkan angka saat ini (a) ke daftar hasil
+        deret.append(angka_berikutnya)
+    print (deret[:n])
+
+# Eksekusi code dengan masukkan jumlah angka
+n = int(input("Masukkan jumlah angka: "))
+# Tampilkan deret fibonacci dengan print
+print("Deret Fibonacci:", fibonacci_series(n))
