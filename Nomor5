@@ -1,0 +1,7 @@
+n = int(input("Masukkan nilai n: ")) #Menampilkan "Masukkan Nilai n" untuk input nilai yang akan digunakan
+
+# Menggunakan loop untuk mencetak desain angka
+for i in range(1, n + 1): # Memulai loop "for" untuk iterasi variabel i dari 1 hingga n.
+    for j in range(i): # Memulai loop for kedua, untuk iterasi variabel j dari 0 hingga i-1. 
+        print(i, end=" ") # Mencetak nilai i, tetapi dengan argumen end=" " yang digunakan untuk menghindari pemindahan baris setelah mencetak.
+    print()
